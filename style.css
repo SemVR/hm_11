@@ -1,24 +1,135 @@
-@keyframes slide {
+@keyframes square {
   from { left: 0; }
   to { left: 50%; }
 	25%{
 		width: 115px;
 		height: 115px;
+		fill: rgb(148, 148, 255);
+		stroke: rgb(198, 53, 255);
 	}
 	50%{
 		width: 130px;
 		height: 130px;
+		fill: rgb(96, 96, 255);
+		stroke: rgb(223, 141, 253);
 	}
-	75%{
+	100%{
 		width: 115px;
 		height: 115px;
+		fill: rgb(0, 0, 255);
+		stroke: rgb(237, 191, 255);
 	}
 }
 
-div {
+.square{
   width: 100px;
   height: 100px;
-	padding: 10%;
+	padding: 1%;
+	fill: rgb(231, 231, 231);
+	stroke-width: 5px;
+	stroke: rgb(159, 0, 252);
   position: relative;
-  animation: slide 2s ease-in-out 0s infinite alternate;
+  animation: square 1s ease-in-out 1s infinite alternate;
+}
+
+@keyframes rectangle {
+  from { left: 0; }
+  to { left: 50%; }
+	25%{
+		width: 115px;
+		height: 115px;
+		fill: rgb(28, 170, 23);
+		stroke: rgb(255, 136, 136);
+	}
+	50%{
+		width: 130px;
+		height: 130px;
+		fill: rgb(92, 243, 87);
+		stroke: rgb(255, 136, 136);
+	}
+	100%{
+		width: 115px;
+		height: 115px;
+		fill: rgb(208, 252, 206);
+		stroke: rgb(252, 0, 0);
+	}
+}
+
+.rectangle {
+  width: 100px;
+  height: 100px;
+	padding: 1%;
+	stroke-width: 5px;
+	fill: rgb(5, 158, 0);
+	stroke: rgb(255, 188, 188);
+  position: relative;
+  animation: rectangle 1s ease-in-out 2s infinite alternate;
+}
+
+@keyframes ellipse {
+  from { left: 0; }
+  to { left: 50%; }
+	25%{
+		width: 115px;
+		height: 115px;
+		fill: rgb(128, 94, 0);
+		stroke: rgb(222, 252, 167);
+	}
+	50%{
+		width: 130px;
+		height: 130px;
+		fill: rgb(201, 147, 0);
+		stroke: rgb(150, 221, 18);
+	}
+	100%{
+		width: 115px;
+		height: 115px;
+		fill: rgb(245, 206, 100);
+		stroke: rgb(89, 136, 3);
+	}
+}
+
+.ellipse {
+  width: 100px;
+  height: 100px;
+	padding: 1%;
+	stroke-width: 5px;
+	fill: rgb(128, 94, 0);
+	stroke: rgb(225, 245, 187);
+  position: relative;
+  animation: ellipse 1s ease-in-out 3s infinite alternate;
+}
+
+@keyframes circle {
+  from { left: 0; }
+  to { left: 50%; }
+	25%{
+		width: 115px;
+		height: 115px;
+		fill: rgb(231, 35, 35);
+		stroke: rgb(136, 239, 243);
+	}
+	50%{
+		width: 130px;
+		height: 130px;
+		fill: rgb(245, 82, 82);
+		stroke: rgb(69, 219, 224);
+	}
+	100%{
+		width: 115px;
+		height: 115px;
+		fill: rgb(255, 172, 172);
+		stroke: rgb(2, 227, 235);
+	}
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+	padding: 1%;
+	stroke-width: 5px;
+	fill: rgb(129, 0, 0);
+	stroke: rgb(179, 246, 248);
+  position: relative;
+  animation: circle 1s ease-in-out 4s infinite alternate;
 }
